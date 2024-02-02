@@ -55,6 +55,12 @@ public static class Agents
                 "An agent that provides airline flight information");
 
         yield return
+            GetMicroAgent<AnimalSounds>(
+                "AnimalSoundAgent",
+                "Provide the sounds made be certain animals.",
+                "An agent that sounds made be certain animals");
+
+        yield return
             GetMicroAgent<Banking>(
                 "BankAgent",
                 "Provide bank account information and transactions.",
@@ -100,6 +106,12 @@ public static class Agents
                 "An agent that provides airline flight information");
 
         yield return
+            CreateMicroPrompt<AnimalSounds>(
+                "AnimalSoundAgent",
+                "Provide the sounds made be certain animals.",
+                "An agent that sounds made be certain animals");
+
+        yield return
             CreateMicroPrompt<Banking>(
                 "BankAgent",
                 "Provide bank account information and transactions.",
@@ -139,6 +151,7 @@ public static class Agents
     public static IEnumerable<KernelPlugin> GetPlugins()
     {
         yield return GetPlugin<Airline>();
+        yield return GetPlugin<AnimalSounds>();
         yield return GetPlugin<Banking>();
         yield return GetPlugin<Calendar>();
         yield return GetPlugin<Location>();

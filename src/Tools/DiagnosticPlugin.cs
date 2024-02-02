@@ -1,7 +1,4 @@
-﻿using Microsoft.SemanticKernel;
-using static Microsoft.Microagents.Tools.DiagnosticPlugin;
-
-namespace Microsoft.Microagents.Tools;
+﻿namespace Microsoft.Microagents.Tools;
 
 public abstract class DiagnosticPlugin
 {

@@ -14,6 +14,11 @@
 
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="Tools\AnimalSounds.Generated.cs">
+      <DependentUpon>AnimalSounds.Generated.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </None>
     <None Include="Tools\Translator.Generated.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -22,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Tools\AnimalSounds.Generated.tt">
+      <LastGenOutput>AnimalSounds.Generated.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
     <None Update="Tools\Translator.Generated.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Translator.Generated.cs</LastGenOutput>
@@ -33,6 +42,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Tools\AnimalSounds.Generated.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AnimalSounds.Generated.tt</DependentUpon>
+    </Compile>
     <Compile Update="Tools\Translator.Generated.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
