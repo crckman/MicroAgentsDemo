@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents;
+﻿namespace Microagents;
 
 using Microsoft.SemanticKernel;
 using System.Diagnostics.CodeAnalysis;

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents.Tools;
+﻿namespace Microagents.Tools;
 
 using Microsoft.SemanticKernel;
 using System;

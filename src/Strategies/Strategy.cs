@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents.Strategies;
+﻿namespace Microagents.Strategies;
 
 internal abstract class Strategy
 {

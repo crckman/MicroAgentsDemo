@@ -1,9 +1,8 @@
-﻿namespace Microsoft.Microagents.Demo;
+﻿namespace Microagents;
 
 using Microsoft.Microagents;
 using Microsoft.Microagents.Demos;
 using Microsoft.Microagents.Strategies;
-using System.Dynamic;
 
 internal class Program
 {
@@ -45,10 +44,10 @@ internal class Program
 
         var demo = demos[flavor].Invoke();
 
-        await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
-        //await RunDemoAsync(new PromptStrategy(Agents.ManagerPrompt)); // $$$
-        await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
-        await RunDemoAsync(new AgentStrategy(Agents.MonoAgent));
+        //await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
+        await RunDemoAsync(new PromptStrategy(Agents.ManagerPrompt)); // $$$
+        //await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
+        //await RunDemoAsync(new AgentStrategy(Agents.MonoAgent));
 
         Task RunDemoAsync(Strategy strategy) =>
             demo.InvokeAsync(strategy);

@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents.Demos;
+﻿namespace Microagents.Demos;
 
 internal class CalendarDemo : StrategyDemo
 {

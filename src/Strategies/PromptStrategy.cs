@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents.Strategies;
+﻿namespace Microagents.Strategies;
 
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Connectors.OpenAI;

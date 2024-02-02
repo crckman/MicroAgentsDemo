@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents.Demos;
+﻿namespace Microagents.Demos;
 
 using Microsoft.Microagents.Strategies;
 using Microsoft.Microagents.Tools;

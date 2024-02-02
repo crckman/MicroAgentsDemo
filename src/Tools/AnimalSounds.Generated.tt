@@ -217,7 +217,7 @@
         Tuple.Create("Zebra","bray"),
      };
  #>
-namespace Microsoft.Microagents.Tools;
+namespace Microagents.Tools;
 
 using Microsoft.SemanticKernel;
 using System.ComponentModel;

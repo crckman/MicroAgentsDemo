@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents;
+﻿namespace Microagents;
 
 /// <summary>
 /// Convenience list of Open AI function calling models.

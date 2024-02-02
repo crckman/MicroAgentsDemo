@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Microagents;
+﻿namespace Microagents;
 
 /// <summary>
 /// Configuration for the demo based on environment:
