@@ -1,0 +1,102 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<#
+ var languages =
+     new List<string>
+     {
+        "Afrikanns",
+        "Albanian",
+        "Arabic",
+        "Armenian",
+        "Basque",
+        "Bengali",
+        "Bulgarian",
+        "Catalan",
+        "Cambodian",
+        "Chinese",
+        "Croation",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "Estonian",
+        "Fiji",
+        "Finnish",
+        "French",
+        "Georgian",
+        "German",
+        "Greek",
+        "Gujarati",
+        "Hebrew",
+        "Hindi",
+        "Hungarian",
+        "Icelandic",
+        "Indonesian",
+        "Irish",
+        "Italian",
+        "Japanese",
+        "Javanese",
+        "Korean",
+        "Latin",
+        "Latvian",
+        "Lithuanian",
+        "Macedonian",
+        "Malay",
+        "Malayalam",
+        "Maltese",
+        "Maori",
+        "Marathi",
+        "Mongolian",
+        "Nepali",
+        "Norwegian",
+        "Persian",
+        "Polish",
+        "Portuguese",
+        "Punjabi",
+        "Quechua",
+        "Romanian",
+        "Russian",
+        "Samoan",
+        "Serbian",
+        "Slovak",
+        "Slovenian",
+        "Spanish",
+        "Swahili",
+        "Swedish ",
+        "Tamil",
+        "Tatar",
+        "Telugu",
+        "Thai",
+        "Tibetan",
+        "Tonga",
+        "Turkish",
+        "Ukranian",
+        "Urdu",
+        "Uzbek",
+        "Vietnamese",
+        "Welsh",
+        "Xhosa",
+     };
+ #>
+namespace Microsoft.Microagents.Tools;
+
+using Microsoft.SemanticKernel;
+using System.ComponentModel;
+
+public partial class Translator : DiagnosticPlugin
+{
+<# foreach (var languge in languages) { #>
+    [KernelFunction]
+    [Description("Translate an English phrase to <#= languge #>.")]
+    public string To<#= languge #>(
+        [Description("The English phrase to translate into <#= languge #>.")]
+        string phrase)
+    {
+        return TranslateFailure(nameof(To<#= languge #>), phrase);
+    }
+
+<# } #>
+}

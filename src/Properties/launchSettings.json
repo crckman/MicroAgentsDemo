@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MicroAgentsDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "banking"
+    }
+  }
+}
