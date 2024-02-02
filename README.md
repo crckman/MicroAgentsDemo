@@ -3,11 +3,19 @@ This repo contains a demo app associated with the blog: [MicroAgents: Exploring 
 
 ## Goal
 
-TBD
+The *MicroAgent* concept is derived from *MicroServices* in the sense of coordinating loosely coupled microagents, each of which is paired to a specific api / domain.
 
+#### Compared to a monolithic agent that manages a large tool set:
 ![A mono-agent](./.media/monoagents.png)
 
+#### A microagent pattern delegates api interaction to specialized microagents:
 ![A micro-agent](./.media/microagents.png)
+
+TBD: Open AI maximum is 128 tools for single agent.
+
+TBD: Re-use
+
+TBD: Context
 
 ## Setup
 Configuration for the demo based on the following environment variables:
