@@ -32,7 +32,10 @@ internal class Program
 
         if (args.Length > 1)
         {
-            Console.WriteLine(string.Join(", ", Enum.GetValues<Demo>()));
+            Console.WriteLine();
+            Console.WriteLine($"Provide a single argument to select a demo-mode (default: Calendar):");
+            Console.WriteLine($"\n\t{string.Join("\n\t", Enum.GetValues<Demo>())}");
+            Console.WriteLine();
             return;
         }
         else if (args.Length == 1)
@@ -44,7 +47,7 @@ internal class Program
 
         await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
         //await RunDemoAsync(new PromptStrategy(Agents.ManagerPrompt)); // $$$
-        await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent)); 
+        await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
         await RunDemoAsync(new AgentStrategy(Agents.MonoAgent));
 
         Task RunDemoAsync(Strategy strategy) =>
