@@ -48,5 +48,19 @@ dotnet run Travel
 
 ## Results
 
-TBD
+To validate the the overall process, the `Calendar` demo was ran repeatedly for either agent type with the following result:
 
+|Agent|Completion|Attempts|Success%|Min. Duration|Avg. Duration|Max. Duration|
+|---|---|---|---|---|---|---|
+|Mono|11|45|76%|15.52s|22.81s|36.42s|
+|Micro|5|45|89%|17.93s|35.12s|70.14s|
+
+> The `Calendar` demo is a simple bench mark that utilizes two tools from the `Calendar API`:
+> 1. Call tool to get current date.
+> 1. Compute the dates for "next month"
+> 1. Call tool to retrieve the list of next month's the calendar events
+> 1. Identify openings on calendar for 5 day vacation
+
+The microagent approach shows a higher success rate but also larger latencies.
+
+Looking into the latency differences shows  the microagent approach results in additional POST requests.  Because the demo is based on the *Open AI Assistant API (beta)*, additional processing around `thread`, `message`, and `run` creation (as opposed to model processing) account for much of the difference in latency.
