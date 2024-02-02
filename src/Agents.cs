@@ -9,21 +9,33 @@ public static class Agents
 {
     private static readonly Dictionary<string, IAgent> agents = [];
 
+    /// <summary>
+    /// Manager/micro-agents using Open AI Assistant API.
+    /// </summary>
     public static IAgent ManagerAgent =>
         GetManagerAgent(
             nameof(ManagerAgent),
             "Solve the given objective working with agents by providing complete and precise instructions.");
 
-    public static PromptAgent ManagerPrompt => // $$$
+    /// <summary>
+    /// Manager/micro-agents using only LLM (no Assistant API).
+    /// </summary>
+    public static PromptAgent ManagerPrompt =>
         CreateManagerPrompt(
             nameof(ManagerPrompt),
             "Solve the given objective working with agents by providing complete and precise instructions.");
 
+    /// <summary>
+    /// Single agent using Open AI Assistant API.
+    /// </summary>
     public static IAgent MonoAgent =>
         GetMonoAgent(
             nameof(MonoAgent),
             "Solve the given objective with the provided tools and available data.");
 
+    /// <summary>
+    /// Single agents using only LLM (no Assistant API).
+    /// </summary>
     public static PromptAgent MonoPrompt =>
         CreateMonoPrompt(
             nameof(MonoPrompt),
@@ -97,7 +109,7 @@ public static class Agents
                 "An agent that provides information on weather for a specific location.");
     }
 
-    public static IEnumerable<PromptAgent> GetPrompts() // $$$
+    public static IEnumerable<PromptAgent> GetPrompts()
     {
         yield return
             CreateMicroPrompt<Airline>(
@@ -177,7 +189,7 @@ public static class Agents
         return agent;
     }
 
-    private static PromptAgent CreateManagerPrompt( // $$$
+    private static PromptAgent CreateManagerPrompt(
         string agentName,
         string agentInstructions)
     {
