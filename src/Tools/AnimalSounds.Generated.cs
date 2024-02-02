@@ -7,74 +7,266 @@ public partial class AnimalSounds : DiagnosticPlugin
 {
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Rusa.")]
-    public string GetRusaSound()
+    [Description("Get the animal sound made by a Antelope.")]
+    public string GetAntelopeSound()
     {
-        return GetAnimalSound(nameof(GetRusaSound), "Rusa", "bark");
+        return GetAnimalSound(nameof(GetAntelopeSound), "Antelope", "snort");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Rusty-Spotted Cat.")]
-    public string GetRustySpottedCatSound()
+    [Description("Get the animal sound made by a Bat.")]
+    public string GetBatSound()
     {
-        return GetAnimalSound(nameof(GetRustySpottedCatSound), "Rusty-Spotted Cat", "purr");
+        return GetAnimalSound(nameof(GetBatSound), "Bat", "screech");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Sable.")]
-    public string GetSableSound()
+    [Description("Get the animal sound made by a Bear.")]
+    public string GetBearSound()
     {
-        return GetAnimalSound(nameof(GetSableSound), "Sable", "chirp");
+        return GetAnimalSound(nameof(GetBearSound), "Bear", "growl");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Saiga.")]
-    public string GetSaigaSound()
+    [Description("Get the animal sound made by a Beaver.")]
+    public string GetBeaverSound()
     {
-        return GetAnimalSound(nameof(GetSaigaSound), "Saiga", "grunt");
+        return GetAnimalSound(nameof(GetBeaverSound), "Beaver", "gnaw");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Sambar.")]
-    public string GetSambarSound()
+    [Description("Get the animal sound made by a Bee.")]
+    public string GetBeeSound()
     {
-        return GetAnimalSound(nameof(GetSambarSound), "Sambar", "bark");
+        return GetAnimalSound(nameof(GetBeeSound), "Bee", "buzz");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Sand Cat.")]
-    public string GetSandCatSound()
+    [Description("Get the animal sound made by a Bird.")]
+    public string GetBirdSound()
     {
-        return GetAnimalSound(nameof(GetSandCatSound), "Sand Cat", "purr");
+        return GetAnimalSound(nameof(GetBirdSound), "Bird", "chirp");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Seal.")]
-    public string GetSealSound()
+    [Description("Get the animal sound made by a Boar.")]
+    public string GetBoarSound()
     {
-        return GetAnimalSound(nameof(GetSealSound), "Seal", "bark");
+        return GetAnimalSound(nameof(GetBoarSound), "Boar", "grunt");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Serow.")]
-    public string GetSerowSound()
+    [Description("Get the animal sound made by a Cat.")]
+    public string GetCatSound()
     {
-        return GetAnimalSound(nameof(GetSerowSound), "Serow", "bleat");
+        return GetAnimalSound(nameof(GetCatSound), "Cat", "meow");
     }
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Serval.")]
-    public string GetServalSound()
+    [Description("Get the animal sound made by a Chicken.")]
+    public string GetChickenSound()
     {
-        return GetAnimalSound(nameof(GetServalSound), "Serval", "purr");
+        return GetAnimalSound(nameof(GetChickenSound), "Chicken", "cluck");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Cow.")]
+    public string GetCowSound()
+    {
+        return GetAnimalSound(nameof(GetCowSound), "Cow", "mooo");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Cricket.")]
+    public string GetCricketSound()
+    {
+        return GetAnimalSound(nameof(GetCricketSound), "Cricket", "chirp");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Crocodile.")]
+    public string GetCrocodileSound()
+    {
+        return GetAnimalSound(nameof(GetCrocodileSound), "Crocodile", "snap");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Deer.")]
+    public string GetDeerSound()
+    {
+        return GetAnimalSound(nameof(GetDeerSound), "Deer", "snort");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Dog.")]
+    public string GetDogSound()
+    {
+        return GetAnimalSound(nameof(GetDogSound), "Dog", "woof");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Donkey.")]
+    public string GetDonkeySound()
+    {
+        return GetAnimalSound(nameof(GetDonkeySound), "Donkey", "hee-haw");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Duck.")]
+    public string GetDuckSound()
+    {
+        return GetAnimalSound(nameof(GetDuckSound), "Duck", "quack");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Eagle.")]
+    public string GetEagleSound()
+    {
+        return GetAnimalSound(nameof(GetEagleSound), "Eagle", "screech");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Elephant.")]
+    public string GetElephantSound()
+    {
+        return GetAnimalSound(nameof(GetElephantSound), "Elephant", "trumpet");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Fox.")]
+    public string GetFoxSound()
+    {
+        return GetAnimalSound(nameof(GetFoxSound), "Fox", "yelp");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Frog.")]
+    public string GetFrogSound()
+    {
+        return GetAnimalSound(nameof(GetFrogSound), "Frog", "ribbit");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Goat.")]
+    public string GetGoatSound()
+    {
+        return GetAnimalSound(nameof(GetGoatSound), "Goat", "bleat");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Horse.")]
+    public string GetHorseSound()
+    {
+        return GetAnimalSound(nameof(GetHorseSound), "Horse", "neigh");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Lion.")]
+    public string GetLionSound()
+    {
+        return GetAnimalSound(nameof(GetLionSound), "Lion", "roar");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Monkey.")]
+    public string GetMonkeySound()
+    {
+        return GetAnimalSound(nameof(GetMonkeySound), "Monkey", "oo-oo-aa-aa");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Mouse.")]
+    public string GetMouseSound()
+    {
+        return GetAnimalSound(nameof(GetMouseSound), "Mouse", "squeak");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Mule.")]
+    public string GetMuleSound()
+    {
+        return GetAnimalSound(nameof(GetMuleSound), "Mule", "hee-haw");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Owl.")]
+    public string GetOwlSound()
+    {
+        return GetAnimalSound(nameof(GetOwlSound), "Owl", "hoot");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Parrot.")]
+    public string GetParrotSound()
+    {
+        return GetAnimalSound(nameof(GetParrotSound), "Parrot", "squawk");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Pig.")]
+    public string GetPigSound()
+    {
+        return GetAnimalSound(nameof(GetPigSound), "Pig", "oink");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Pony.")]
+    public string GetPonySound()
+    {
+        return GetAnimalSound(nameof(GetPonySound), "Pony", "neigh");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Rabbit.")]
+    public string GetRabbitSound()
+    {
+        return GetAnimalSound(nameof(GetRabbitSound), "Rabbit", "thump");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Raccoon.")]
+    public string GetRaccoonSound()
+    {
+        return GetAnimalSound(nameof(GetRaccoonSound), "Raccoon", "trill");
+    }
+
+
+    [KernelFunction]
+    [Description("Get the animal sound made by a Rooster.")]
+    public string GetRoosterSound()
+    {
+        return GetAnimalSound(nameof(GetRoosterSound), "Rooster", "cock-a-doodle-doo");
     }
 
 
@@ -87,58 +279,10 @@ public partial class AnimalSounds : DiagnosticPlugin
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Short-Eared Dog.")]
-    public string GetShortEaredDogSound()
-    {
-        return GetAnimalSound(nameof(GetShortEaredDogSound), "Short-Eared Dog", "yelp");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Sika Deer.")]
-    public string GetSikaDeerSound()
-    {
-        return GetAnimalSound(nameof(GetSikaDeerSound), "Sika Deer", "squeak");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Sitatunga.")]
-    public string GetSitatungaSound()
-    {
-        return GetAnimalSound(nameof(GetSitatungaSound), "Sitatunga", "bark");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Skunk.")]
-    public string GetSkunkSound()
-    {
-        return GetAnimalSound(nameof(GetSkunkSound), "Skunk", "hiss");
-    }
-
-
-    [KernelFunction]
     [Description("Get the animal sound made by a Snake.")]
     public string GetSnakeSound()
     {
         return GetAnimalSound(nameof(GetSnakeSound), "Snake", "hiss");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Snow Leopard.")]
-    public string GetSnowLeopardSound()
-    {
-        return GetAnimalSound(nameof(GetSnowLeopardSound), "Snow Leopard", "purr");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Springbok.")]
-    public string GetSpringbokSound()
-    {
-        return GetAnimalSound(nameof(GetSpringbokSound), "Springbok", "snort");
     }
 
 
@@ -151,58 +295,10 @@ public partial class AnimalSounds : DiagnosticPlugin
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Stoat.")]
-    public string GetStoatSound()
-    {
-        return GetAnimalSound(nameof(GetStoatSound), "Stoat", "squeak");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Swift Fox.")]
-    public string GetSwiftFoxSound()
-    {
-        return GetAnimalSound(nameof(GetSwiftFoxSound), "Swift Fox", "yelp");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Tahr.")]
-    public string GetTahrSound()
-    {
-        return GetAnimalSound(nameof(GetTahrSound), "Tahr", "bleat");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Tapir.")]
-    public string GetTapirSound()
-    {
-        return GetAnimalSound(nameof(GetTapirSound), "Tapir", "snort");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Tibetan Fox.")]
-    public string GetTibetanFoxSound()
-    {
-        return GetAnimalSound(nameof(GetTibetanFoxSound), "Tibetan Fox", "yelp");
-    }
-
-
-    [KernelFunction]
     [Description("Get the animal sound made by a Tiger.")]
     public string GetTigerSound()
     {
         return GetAnimalSound(nameof(GetTigerSound), "Tiger", "grrr");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Tigon.")]
-    public string GetTigonSound()
-    {
-        return GetAnimalSound(nameof(GetTigonSound), "Tigon", "roar");
     }
 
 
@@ -215,30 +311,6 @@ public partial class AnimalSounds : DiagnosticPlugin
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Unicorn.")]
-    public string GetUnicornSound()
-    {
-        return GetAnimalSound(nameof(GetUnicornSound), "Unicorn", "neigh");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Urial.")]
-    public string GetUrialSound()
-    {
-        return GetAnimalSound(nameof(GetUrialSound), "Urial", "bleat");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Vicuna.")]
-    public string GetVicunaSound()
-    {
-        return GetAnimalSound(nameof(GetVicunaSound), "Vicuna", "hum");
-    }
-
-
-    [KernelFunction]
     [Description("Get the animal sound made by a Walrus.")]
     public string GetWalrusSound()
     {
@@ -247,82 +319,10 @@ public partial class AnimalSounds : DiagnosticPlugin
 
 
     [KernelFunction]
-    [Description("Get the animal sound made by a Warthog.")]
-    public string GetWarthogSound()
-    {
-        return GetAnimalSound(nameof(GetWarthogSound), "Warthog", "grunt");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Water Deer.")]
-    public string GetWaterDeerSound()
-    {
-        return GetAnimalSound(nameof(GetWaterDeerSound), "Water Deer", "whistle");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Waterbuck.")]
-    public string GetWaterbuckSound()
-    {
-        return GetAnimalSound(nameof(GetWaterbuckSound), "Waterbuck", "snort");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Weasel.")]
-    public string GetWeaselSound()
-    {
-        return GetAnimalSound(nameof(GetWeaselSound), "Weasel", "squeak");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Whale.")]
-    public string GetWhaleSound()
-    {
-        return GetAnimalSound(nameof(GetWhaleSound), "Whale", "sing");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a White-Tailed Deer.")]
-    public string GetWhiteTailedDeerSound()
-    {
-        return GetAnimalSound(nameof(GetWhiteTailedDeerSound), "White-Tailed Deer", "snort");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Wildcat.")]
-    public string GetWildcatSound()
-    {
-        return GetAnimalSound(nameof(GetWildcatSound), "Wildcat", "purr");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Wildebeest.")]
-    public string GetWildebeestSound()
-    {
-        return GetAnimalSound(nameof(GetWildebeestSound), "Wildebeest", "gru-gru");
-    }
-
-
-    [KernelFunction]
     [Description("Get the animal sound made by a Wolf.")]
     public string GetWolfSound()
     {
         return GetAnimalSound(nameof(GetWolfSound), "Wolf", "howl");
-    }
-
-
-    [KernelFunction]
-    [Description("Get the animal sound made by a Wolverine.")]
-    public string GetWolverineSound()
-    {
-        return GetAnimalSound(nameof(GetWolverineSound), "Wolverine", "growl");
     }
 
 

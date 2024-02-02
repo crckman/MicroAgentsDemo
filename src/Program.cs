@@ -40,10 +40,8 @@ internal class Program
 
         var demo = demos[flavor].Invoke();
 
-        //await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
-        //await RunDemoAsync(new PromptStrategy(Agents.ManagerPrompt)); // $$$
-        await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
         await RunDemoAsync(new AgentStrategy(Agents.MonoAgent));
+        await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
 
         Task RunDemoAsync(Strategy strategy) =>
             demo.InvokeAsync(strategy);

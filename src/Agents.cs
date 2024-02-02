@@ -18,14 +18,6 @@ public static class Agents
             "Solve the given objective working with agents by providing complete and precise instructions.");
 
     /// <summary>
-    /// Manager/micro-agents using only LLM (no Assistant API).
-    /// </summary>
-    public static PromptAgent ManagerPrompt =>
-        CreateManagerPrompt(
-            nameof(ManagerPrompt),
-            "Solve the given objective working with agents by providing complete and precise instructions.");
-
-    /// <summary>
     /// Single agent using Open AI Assistant API.
     /// </summary>
     public static IAgent MonoAgent =>
@@ -109,57 +101,6 @@ public static class Agents
                 "An agent that provides information on weather for a specific location.");
     }
 
-    public static IEnumerable<PromptAgent> GetPrompts()
-    {
-        yield return
-            CreateMicroPrompt<Airline>(
-                "FlightAgent",
-                "Provide airline flight information using only the provided tools.",
-                "An agent that provides airline flight information");
-
-        yield return
-            CreateMicroPrompt<AnimalSounds>(
-                "AnimalSoundAgent",
-                "Provide the sounds made be certain animals.",
-                "An agent that sounds made be certain animals");
-
-        yield return
-            CreateMicroPrompt<Banking>(
-                "BankAgent",
-                "Provide bank account information and transactions.",
-                "An agent that acts as a banker.");
-
-        yield return
-            CreateMicroPrompt<Calendar>(
-                "CalendarAgent",
-                "Manage the calendar using the provided tools and provide precise and accurate information.",
-                "An agent that manages the calendar.");
-
-        yield return
-            CreateMicroPrompt<Location>(
-                "LocationAgent",
-                "Provide geographic location information using only the provided tools.",
-                "An agent that provides location information and about the user.");
-
-        yield return
-            CreateMicroPrompt<Translator>(
-                "TranslatorAgent",
-                "You are a translator that specializes in translating english phrases into other languages",
-                "An agent that translates english phrases into other languages.");
-
-        yield return
-            CreateMicroPrompt<Travel>(
-                "TravelAgent",
-                "You are a travel agent. List and book airline flights using only the provided tools.  Figure airport codes as needed using your knowledge.",
-                "An agent that provides information on available airline flights and also can book flights.  This agent does not know the location of your home.  Always be expicit on the origin and destination.");
-
-        yield return
-            CreateMicroPrompt<Weather>(
-                "WeatherAgent",
-                "You provide weather information only.",
-                "An agent that provides information on weather for a specific location.");
-    }
-
     public static IEnumerable<KernelPlugin> GetPlugins()
     {
         yield return GetPlugin<Airline>();
@@ -187,18 +128,6 @@ public static class Agents
         }
 
         return agent;
-    }
-
-    private static PromptAgent CreateManagerPrompt(
-        string agentName,
-        string agentInstructions)
-    {
-        return
-            CreatePrompt(
-                agentName,
-                agentInstructions,
-                agentDescription: null,
-                GetPrompts().ToArray());
     }
 
     private static IAgent GetMonoAgent(
