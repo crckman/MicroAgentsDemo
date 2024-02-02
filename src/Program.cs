@@ -28,7 +28,8 @@ internal class Program
     {
         Demo flavor = Demo.Calendar;
 
-        if (args.Length > 1)
+        if (args.Length > 1 ||
+            args.Length == 1 && !Enum.TryParse<Demo>(args[0], ignoreCase: true, out flavor))
         {
             Console.WriteLine();
             Console.WriteLine($"Provide a single argument to select a demo-mode (default: Calendar):");
@@ -36,14 +37,10 @@ internal class Program
             Console.WriteLine();
             return;
         }
-        else if (args.Length == 1)
-        {
-            Enum.TryParse<Demo>(args[0], ignoreCase: true, out flavor);
-        }
 
         var demo = demos[flavor].Invoke();
 
-        await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
+        //await RunDemoAsync(new PromptStrategy(Agents.MonoPrompt));
         //await RunDemoAsync(new PromptStrategy(Agents.ManagerPrompt)); // $$$
         await RunDemoAsync(new AgentStrategy(Agents.ManagerAgent));
         await RunDemoAsync(new AgentStrategy(Agents.MonoAgent));
