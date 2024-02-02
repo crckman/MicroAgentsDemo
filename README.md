@@ -34,6 +34,7 @@ Each demo run on both a *mono* and *micro* agent architecture, for comparison.
 Example:
 
 ```cmd
+cd src
 dotnet run Travel
 ```
 
