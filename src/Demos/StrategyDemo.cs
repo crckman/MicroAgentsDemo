@@ -1,7 +1,7 @@
 ﻿namespace Microagents.Demos;
 
-using Microsoft.Microagents.Strategies;
-using Microsoft.Microagents.Tools;
+using Microagents.Strategies;
+using Microagents.Tools;
 using System.Diagnostics;
 
 internal abstract class StrategyDemo

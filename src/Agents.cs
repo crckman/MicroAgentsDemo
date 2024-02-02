@@ -1,6 +1,6 @@
 ﻿namespace Microagents;
 
-using Microsoft.Microagents.Tools;
+using Microagents.Tools;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Experimental.Agents;
 using System.Collections.Generic;
