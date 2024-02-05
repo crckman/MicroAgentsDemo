@@ -114,7 +114,7 @@ Types of failures observed:
 
 When treating cases as successful where booking information had been correctly determined but required user confirmation to proceed confirmation, the _MicroAgent_ success rate becomes 92% (46/50)
 
-Either approach would vary with regards to adding the trip to the calendar or checking the weather forcast.  While doing so affected total duration, the precence or absence of these activities did not impact the success rate.
+Either approach would vary with regards to adding the trip to the calendar or checking the weather forcast.  While doing so affected total duration, the precence or absence of these activities did not impact the success criteria.
 
 Sometimes when calendar entry was created, icons were included in the title: `Enjoy your trip to Hawaii! 🌴✈️`
 
@@ -122,7 +122,7 @@ Sometimes when calendar entry was created, icons were included in the title: `En
 
 While a monolithic agent pattern benefits from overall lower latency, it appears to struggle with insuffient semantic narrowing while coordinating too many details for higher complexity tasks.
 
-The *MicroAgent* pattern exhibits increased latency primarily due to the increased number of network requests related to creating and managing delegated conversations (with *MicroAgents).
+The *MicroAgent* pattern exhibits higher latency primarily due to the increased number of network requests related to creating and managing delegated conversations (with *MicroAgents).
 
 As task complexity increases, the *MicroAgent* pattern shows significantly higher success rate and a higher propensity to seek confirmation / respect guard-rails.
 
