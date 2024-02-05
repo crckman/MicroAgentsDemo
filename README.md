@@ -1,11 +1,11 @@
 # MicroAgents Demo
-This repo contains a demo app associated with the blog: [MicroAgents: Exploring Agentic Architecture with Microservices](https://devblogs.microsoft.com/semantic-kernel/microagents-exploring-agentic-architecture-with-microservices/) by Alex Chao & Chris Rickman.
+This repo contains code for a demo application associated with the blog: [MicroAgents: Exploring Agentic Architecture with Microservices](https://devblogs.microsoft.com/semantic-kernel/microagents-exploring-agentic-architecture-with-microservices/) by Alex Chao & Chris Rickman.
 
 ## Goal
 
 The **MicroAgent** concept is derived from the industry standard **MicroServices** architecture by defining and coordinating different AI agents, each of which is paired to a specific API / domain.
 
-To explore the *MigroAgent* pattern this project defines several several _demo_ cases based on a mock tool set. 
+To explore the *MigroAgent* pattern this project defines several several *demo* cases based on a mock tool set. 
 
 For the purposes of this demo, no training shots where utilized in the agent prompts.
 In addition, no storage, memory capture, learning re-inforcement, or guardrails have been introduced.
