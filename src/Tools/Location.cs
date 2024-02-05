@@ -12,7 +12,7 @@ public class Location : DiagnosticPlugin
         return
             CaptureCall(
                 nameof(GetCurrentLocation),
-                "Seattle, WA, USA");
+                "Redmond, WA, USA");
     }
 
     [KernelFunction]

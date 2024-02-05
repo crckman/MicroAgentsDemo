@@ -66,7 +66,7 @@ The microagent approach shows a higher success rate but also larger latencies.
 Types of failures observed:
 
 - Identifying a span with less than 5 days
-- Mis-identifyied "next month" (as the current month)
+- Mis-identified "next month" (as the current month)
 - Selected a return date that is same day as leaving for work trip)
 - Selected a span that would require cancelling dentist
 

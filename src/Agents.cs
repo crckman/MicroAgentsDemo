@@ -91,8 +91,8 @@ public static class Agents
         yield return
             GetMicroAgent<Travel>(
                 "TravelAgent",
-                "You are a travel agent. List and book airline flights using only the provided tools.  Figure airport codes as needed using your knowledge.",
-                "An agent that provides information on available airline flights and also can book flights.  This agent does not know the location of your home.  Always be expicit on the origin and destination.");
+                "You are a travel agent that can list and book airline flights only when both origin and destination are explicitly defined.  Determine airport codes as needed using your knowledge.  Don't forget to consider return flights.",
+                "An agent that provides information on available airline flights and also can book flights.  This agent does not know the location of your home and must always be told both the origin and destination.");
 
         yield return
             GetMicroAgent<Weather>(
