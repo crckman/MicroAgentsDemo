@@ -71,8 +71,8 @@ This provided the following results:
 
 |Agent|Completion|Attempts|Success%|Min. Duration|Avg. Duration|Max. Duration|
 |---|---|---|---|---|---|---|
-|Mono|11|45|76%|15.52s|22.81s|36.42s|
-|Micro|5|45|89%|17.93s|35.12s|70.14s|
+|Mono|34|45|76%|15.52s|22.81s|36.42s|
+|Micro|40|45|89%|17.93s|35.12s|70.14s|
 
 The microagent approach shows a higher success rate but also larger latencies.
 
