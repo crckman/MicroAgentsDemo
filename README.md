@@ -112,7 +112,7 @@ Types of failures observed:
 - Wrong date (_Mono_: once)
 - Wrong departure location (_Mono_: once)
 
-When treating cases as successful where booking information had been correctly determined but required user confirmation to proceed confirmation, the _MicroAgent_ success rate becomes 92% (46/50)
+When treating cases as successful where booking information had been correctly determined but required user confirmation to proceed with booking, **the _MicroAgent_ success rate becomes 92% (46/50)!!!**
 
 Either approach would vary with regards to adding the trip to the calendar or checking the weather forcast.  While doing so affected total duration, the precence or absence of these activities did not impact the success criteria.
 
