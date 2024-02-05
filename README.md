@@ -120,7 +120,7 @@ Sometimes when calendar entry was created, icons were included in the title: `En
 
 ## Analysis
 
-While a monolithic agent pattern benefits from overall lower latency, it appears to struggle with insuffient semantic narrowing while coordinating too many details.
+While a monolithic agent pattern benefits from overall lower latency, it appears to struggle with insuffient semantic narrowing while coordinating too many details for higher complexity tasks.
 
 The *MicroAgent* pattern exhibits increased latency primarily due to the increased number of network requests related to creating and managing delegated conversations (with *MicroAgents).
 
