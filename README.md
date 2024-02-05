@@ -63,4 +63,15 @@ To validate the the overall process, the `Calendar` demo was ran repeatedly for 
 
 The microagent approach shows a higher success rate but also larger latencies.
 
-Looking into the latency differences shows  the microagent approach results in additional POST requests.  Because the demo is based on the *Open AI Assistant API (beta)*, additional processing around `thread`, `message`, and `run` creation (as opposed to model processing) account for much of the difference in latency.
+Types of failures observed:
+
+- Identifying a span with less than 5 days
+- Mis-identifyied "next month" (as the current month)
+- Selected a return date that is same day as leaving for work trip)
+- Selected a span that would require cancelling dentist
+
+Looking into the latency differences showed the microagent approach resulted in additional POST requests.  Because the demo is based on the *Open AI Assistant API (beta)*, additional processing around `thread`, `message`, and `run` creation (as opposed to model processing) account for much of the difference in latency.
+
+Looking at a more complex task, the `Travel` demo had the following result:
+
+TBD...
