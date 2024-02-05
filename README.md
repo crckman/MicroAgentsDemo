@@ -3,15 +3,20 @@ This repo contains a demo app associated with the blog: [MicroAgents: Exploring 
 
 ## Goal
 
-The *MicroAgent* concept is derived from *MicroServices* in the sense of coordinating loosely coupled microagents, each of which is paired to a specific api / domain.
+The **MicroAgent** concept is derived from the industry standard **MicroServices** architecture by defining and coordinating different AI agents, each of which is paired to a specific API / domain.
 
-To explore the *MigroAgent* pattern this project defines several several _demo_ cases based on a mock tool set.
+To explore the *MigroAgent* pattern this project defines several several _demo_ cases based on a mock tool set. 
 
-For the purposes of this demo, no training shots where utilized.
-In addition, no storage, memory capture, learning re-inforcement, or guard rails have been introduced.
-The goal here is to isolate differences in model behavior based soley on the *MicroAgent* pattern.
+For the purposes of this demo, no training shots where utilized in the agent prompts.
+In addition, no storage, memory capture, learning re-inforcement, or guardrails have been introduced.
+The goal here is to isolate differences in model behavior based soley on the **MicroAgent** pattern.
 
-As part of this, no user-interaction other than the initial objective is supported and this objective includes intential ambiguity.
+As part of this, there is no user-interaction other than the stated initial objective. And the objective itself includes intentional ambiguity.
+
+We invite the open-source community to explore the **MicroAgents** on more sophisicated scenarios. Please share your results!
+
+Reach out to [Alex Chao](https://www.linkedin.com/in/alexchao56/) or [Chris Rickman](https://www.linkedin.com/in/chris-rickman/) if these ideas are interesting to you. We'd love to chat!
+
 
 ## MonoAgent
 Consider a monolithic agent that manages a large tool set:
@@ -19,7 +24,7 @@ Consider a monolithic agent that manages a large tool set:
 
 ## MicroAgent
 
-The MicroAgent pattern delegates api interaction to specialized agents.
+The MicroAgent pattern delegates API interaction to specialized agents.
 This allows each *MicroAgent* to be tailored for a specific context and allows for re-use.
 
 > Note: GPT4 currently limits the total number of tools in a completion request to 128.  The *MicroAgent* patterns raises this limit to 16384 (128²).
@@ -46,7 +51,7 @@ The demo takes a single parameter, which is the name of the demo to run:
 - Banking
 - Travel
 
-Each demo run on both a *mono* and *micro* agent architecture, for comparison.
+Each demo ran on both a *mono* and *micro* agent architecture, for comparison.
 
 Example:
 
@@ -59,7 +64,7 @@ dotnet run Travel
 
 ### Calendar Benchmark
 
-To validate the the overall process, the `Calendar` demo was ran repeatedly for both agent types.
+To validate the the overall process, the `Calendar` demo was run repeatedly for both agent types.
 
 > The `Calendar` demo is a simple bench mark that utilizes two tools from the `Calendar API`:
 > 1. Call tool to get current date.
@@ -102,7 +107,7 @@ This provided the following results:
 |Mono|17|50|34%|50.11s|88.90s|156.95s|
 |Micro|30|50|60%|89.61s|146.53s|288.97s|
 
-> Note: The durations calculations are limited to successful task completions.
+> Note: The duration calculations are limited to successful task completions.
 
 Types of failures observed:
 
@@ -122,7 +127,7 @@ Sometimes when calendar entry was created, icons were included in the title: `En
 
 While a monolithic agent pattern benefits from overall lower latency, it appears to struggle with insuffient semantic narrowing while coordinating too many details for higher complexity tasks.
 
-The *MicroAgent* pattern exhibits higher latency primarily due to the increased number of network requests related to creating and managing delegated conversations (with *MicroAgents).
+The *MicroAgent* pattern exhibits higher latency primarily due to the increased number of network requests related to creating and managing delegated conversations between agents.
 
 As task complexity increases, the *MicroAgent* pattern shows significantly higher success rate and a higher propensity to seek confirmation / respect guard-rails.
 
@@ -131,3 +136,5 @@ For example, the *MicroAgent* is able to instruct the requesting agent on how to
 > **Manager Agent:** I'm looking to book a vacation to Hawaii, preferably to Kona, for five days during one of these two ranges: March 2nd to March 6th or March 21st to March 25th. Can you find available flights for these dates?
 >
 > **Travel Agent:** Certainly! To assist you further, I would need to know your departure city to search for flights to Kona, Hawaii. Could you please provide me with the city or airport from which you will be leaving?
+
+
